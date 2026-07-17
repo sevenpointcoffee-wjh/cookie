@@ -1,0 +1,4 @@
+server.*.log
+tmp-playtest/
+.DS_Store
+Thumbs.db

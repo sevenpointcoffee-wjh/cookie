@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Atelier Deluxe</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%23c8752e'/%3E%3Ccircle cx='22' cy='24' r='5' fill='%23351a0e'/%3E%3Ccircle cx='41' cy='26' r='6' fill='%23351a0e'/%3E%3Ccircle cx='30' cy='39' r='7' fill='%23351a0e'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">CA</span>
+          <div>
+            <h1>Cookie Atelier Deluxe</h1>
+            <p>暗夜甜品工坊 · 点击放置经营</p>
+          </div>
+        </div>
+        <div class="quick-stats" aria-label="核心统计">
+          <div>
+            <span id="topCookies">0</span>
+            <small>现有饼干</small>
+          </div>
+          <div>
+            <span id="topCps">0/s</span>
+            <small>工坊产能</small>
+          </div>
+          <div>
+            <span id="topPrestige">0%</span>
+            <small>星尘加成</small>
+          </div>
+        </div>
+      </header>
+
+      <main class="game-layout">
+        <section class="hero-panel" aria-label="主点击区">
+          <div class="score-card">
+            <div class="score-main" id="cookieCount">0</div>
+            <div class="score-sub">
+              <span id="perClick">每次 +1</span>
+              <span id="cps">每秒 0</span>
+            </div>
+          </div>
+
+          <div class="cookie-stage">
+            <button class="cookie-button" id="cookieButton" aria-label="点击大饼干">
+              <img src="./assets/cookie-main.png" alt="" draggable="false" />
+            </button>
+            <button class="golden-cookie hidden" id="goldenCookie" aria-label="点击黄金饼干">
+              <img src="./assets/cookie-gold.png" alt="" draggable="false" />
+            </button>
+            <div class="fx-layer" id="fxLayer" aria-hidden="true"></div>
+          </div>
+
+          <div class="status-strip">
+            <div>
+              <strong id="currentEvent">工坊待命</strong>
+              <span id="eventTimer">黄金饼干会偶尔出现</span>
+            </div>
+            <button class="ghost-button" id="saveNow">保存</button>
+          </div>
+        </section>
+
+        <section class="workshop-panel" aria-label="经营面板">
+          <nav class="tabs" aria-label="功能切换">
+            <button class="tab active" data-tab="shop">建筑</button>
+            <button class="tab" data-tab="upgrades">升级</button>
+            <button class="tab" data-tab="achievements">成就</button>
+            <button class="tab" data-tab="stats">统计</button>
+          </nav>
+
+          <section class="tab-panel active" id="shopPanel">
+            <div class="panel-intro">
+              <h2>工坊建筑</h2>
+              <p>建筑会持续生产饼干，每次购买价格都会上涨。</p>
+            </div>
+            <div class="buy-mode" role="group" aria-label="购买数量">
+              <button class="mode active" data-buy="1">x1</button>
+              <button class="mode" data-buy="10">x10</button>
+              <button class="mode" data-buy="100">x100</button>
+              <button class="mode" data-buy="max">最大</button>
+            </div>
+            <div class="item-list" id="buildingList"></div>
+          </section>
+
+          <section class="tab-panel" id="upgradesPanel">
+            <div class="panel-intro">
+              <h2>秘方升级</h2>
+              <p>升级会改变点击收益、建筑效率和特殊事件收益。</p>
+            </div>
+            <div class="item-list" id="upgradeList"></div>
+          </section>
+
+          <section class="tab-panel" id="achievementsPanel">
+            <div class="panel-intro">
+              <h2>成就墙</h2>
+              <p>达成条件后会自动点亮，提供少量全局加成。</p>
+            </div>
+            <div class="achievement-grid" id="achievementList"></div>
+          </section>
+
+          <section class="tab-panel" id="statsPanel">
+            <div class="panel-intro">
+              <h2>统计与转生</h2>
+              <p>保留星尘加成，重置工坊进度，适合后期重新冲刺。</p>
+            </div>
+            <div class="stats-grid" id="statsGrid"></div>
+            <div class="prestige-card">
+              <div>
+                <strong>星尘转生</strong>
+                <span id="ascendHint">累计 50,000 饼干后解锁</span>
+              </div>
+              <button class="primary-button" id="ascendButton" disabled>转生</button>
+            </div>
+            <button class="danger-button" id="resetButton">清空存档</button>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <template id="toastTemplate">
+      <div class="toast"></div>
+    </template>
+
+    <script type="module" src="./src/game.js"></script>
+  </body>
+</html>

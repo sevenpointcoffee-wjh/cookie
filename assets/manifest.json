@@ -1,0 +1,198 @@
+{
+  "cookie-main": {
+    "file": "cookie-main.png",
+    "atlas": "atelier-atlas.png",
+    "atlasBox": [
+      44,
+      72,
+      760,
+      788
+    ],
+    "size": [
+      765,
+      765
+    ]
+  },
+  "cookie-gold": {
+    "file": "cookie-gold.png",
+    "atlas": "atelier-atlas.png",
+    "atlasBox": [
+      836,
+      102,
+      1206,
+      472
+    ],
+    "size": [
+      356,
+      356
+    ]
+  },
+  "background-atelier": {
+    "file": "background-atelier.png",
+    "atlas": "atelier-atlas.png",
+    "atlasBox": [
+      44,
+      900,
+      1324,
+      1620
+    ],
+    "size": [
+      1280,
+      720
+    ]
+  },
+  "crumbs": {
+    "file": "crumbs.png",
+    "atlas": "atelier-atlas.png",
+    "atlasBox": [
+      1358,
+      950,
+      1768,
+      1130
+    ],
+    "size": [
+      300,
+      126
+    ]
+  },
+  "icon-cursor": {
+    "file": "icon-cursor.png",
+    "atlas": "atelier-atlas.png",
+    "atlasBox": [
+      1330,
+      92,
+      1586,
+      348
+    ],
+    "size": [
+      220,
+      220
+    ]
+  },
+  "icon-witch": {
+    "file": "icon-witch.png",
+    "atlas": "atelier-atlas.png",
+    "atlasBox": [
+      1630,
+      92,
+      1886,
+      348
+    ],
+    "size": [
+      220,
+      220
+    ]
+  },
+  "icon-oven": {
+    "file": "icon-oven.png",
+    "atlas": "atelier-atlas.png",
+    "atlasBox": [
+      1330,
+      396,
+      1586,
+      652
+    ],
+    "size": [
+      220,
+      220
+    ]
+  },
+  "icon-alchemy": {
+    "file": "icon-alchemy.png",
+    "atlas": "atelier-atlas.png",
+    "atlasBox": [
+      1630,
+      396,
+      1886,
+      652
+    ],
+    "size": [
+      220,
+      220
+    ]
+  },
+  "icon-portal": {
+    "file": "icon-portal.png",
+    "atlas": "atelier-atlas.png",
+    "atlasBox": [
+      1330,
+      700,
+      1586,
+      956
+    ],
+    "size": [
+      220,
+      220
+    ]
+  },
+  "icon-guild": {
+    "file": "icon-guild.png",
+    "atlas": "atelier-atlas.png",
+    "atlasBox": [
+      1630,
+      700,
+      1886,
+      956
+    ],
+    "size": [
+      220,
+      220
+    ]
+  },
+  "upgrade-multiplier": {
+    "file": "upgrade-multiplier.png",
+    "atlas": "atelier-atlas.png",
+    "atlasBox": [
+      1390,
+      1196,
+      1618,
+      1424
+    ],
+    "size": [
+      220,
+      220
+    ]
+  },
+  "upgrade-clock": {
+    "file": "upgrade-clock.png",
+    "atlas": "atelier-atlas.png",
+    "atlasBox": [
+      1662,
+      1196,
+      1890,
+      1424
+    ],
+    "size": [
+      220,
+      220
+    ]
+  },
+  "upgrade-ember": {
+    "file": "upgrade-ember.png",
+    "atlas": "atelier-atlas.png",
+    "atlasBox": [
+      1390,
+      1484,
+      1618,
+      1712
+    ],
+    "size": [
+      220,
+      220
+    ]
+  },
+  "upgrade-prism": {
+    "file": "upgrade-prism.png",
+    "atlas": "atelier-atlas.png",
+    "atlasBox": [
+      1662,
+      1484,
+      1890,
+      1712
+    ],
+    "size": [
+      220,
+      220
+    ]
+  }
+}
