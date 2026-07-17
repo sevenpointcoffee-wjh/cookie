@@ -4,6 +4,14 @@
 
 ## 打开方式
 
+GitHub Pages:
+
+```text
+https://sevenpointcoffee-wjh.github.io/cookie/
+```
+
+本项目按电脑端浏览器体验设计，推荐使用 1280px 以上宽度打开。
+
 直接用浏览器打开 `index.html` 即可。也可以在当前目录启动本地服务：
 
 ```powershell
