@@ -18,8 +18,6 @@ https://sevenpointcoffee-wjh.github.io/cookie/
 python -m http.server 5177 --bind 127.0.0.1
 ```
 
-然后访问 `http://127.0.0.1:5177/`。
-
 ## 资产流程
 
 资产不是从第三方游戏或 Wiki 复制的。`scripts/generate_assets.py` 会生成统一风格的大图资产板：
